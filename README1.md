@@ -1,13 +1,15 @@
 # 🛒 E-Commerce Sales Analytics Dashboard
+
 ### 👩‍💻 Developed by Sonika Deshwal
-B.Tech CSE | Data Analytics Enthusiast | SQL & Python Developer
-[![Live Demo](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
+**B.Tech CSE | Data Analytics Enthusiast | SQL & Python Developer**
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Streamlit](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
 [![SQLite](https://img.shields.io/badge/SQLite-3-orange?style=for-the-badge&logo=sqlite)](https://sqlite.org)
 [![Plotly](https://img.shields.io/badge/Plotly-5.18-blueviolet?style=for-the-badge&logo=plotly)](https://plotly.com)
 
 &gt; **Transforming raw e-commerce data into actionable business intelligence through automated ETL pipelines, advanced SQL analytics, and interactive visualizations.**
+
 ---
 
 ## 📌 Table of Contents
@@ -61,65 +63,86 @@ An automated analytics pipeline that transforms raw CSV data into **interactive,
 
 ## 🚀 Live Demo
 
-**Experience the dashboard live:** [https://your-app.streamlit.app](https://your-app.streamlit.app)
+**Experience the dashboard live:** [https://2aq8wyueakiyeuy8bypsph.streamlit.app/](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
 
-### Demo Credentials
-- No login required
-- Interactive filters available in sidebar
-- Data refreshes automatically on load
+### Demo Features
+- 📊 **No login required** - Access all visualizations immediately
+- 🎛️ **Interactive filters** - Dynamic sidebar controls for date ranges, categories, and regions
+- ⚡ **Real-time updates** - Data refreshes automatically on parameter changes
+- 📱 **Responsive design** - Optimized for desktop and tablet viewing
 
 ---
 
 ## 📸 Screenshots
 
-### Executive Summary
-![Executive Summary](screenshots/executive_summary.png)
-*Real-time KPIs: Revenue, Orders, AOV, and Customer Count*
+### 📈 Executive Summary
+*Real-time KPIs: Revenue, Orders, AOV, and Customer Count with trend indicators*
 
-### Revenue Trends
-![Revenue Trends](screenshots/revenue_trends.png)
-*Monthly revenue analysis with growth rate indicators*
+### 💰 Revenue Trends
+*Monthly revenue analysis with growth rate indicators and seasonal patterns*
 
-### Customer Segmentation
-![Customer Segmentation](screenshots/rfm_segments.png)
-*RFM-based customer clusters for targeted marketing*
+### 👥 Customer Segmentation
+*RFM-based customer clusters for targeted marketing campaigns*
 
-### Geographic Performance
-![Geographic Performance](screenshots/geographic_performance.png)
-*State-wise delivery performance and sales distribution*
+### 🗺️ Geographic Performance
+*State-wise delivery performance and sales distribution heatmaps*
+
+### 📦 Product Analytics
+*Top-performing categories and inventory turnover analysis*
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Core Technologies
-- **Python 3.9+** - Primary programming language
-- **SQLite** - Lightweight relational database
-- **Pandas** - Data manipulation and analysis
-- **SQL** - Complex analytical queries
+- **Python 3.9+** - Primary programming language with type hints
+- **SQLite** - Lightweight relational database for efficient querying
+- **Pandas** - Data manipulation and time-series analysis
+- **SQL** - Complex analytical queries with window functions
 
 ### Visualization & Deployment
-- **Streamlit** - Interactive web application framework
-- **Plotly** - Interactive charts and graphs
-- **GitHub** - Version control and CI/CD
+- **Streamlit** - Interactive web application framework with caching
+- **Plotly** - Interactive charts, 3D visualizations, and heatmaps
+- **GitHub** - Version control and CI/CD deployment
 
 ### Data Processing
-- **ETL/ELT** - Extract, Transform, Load pipelines
-- **Data Modeling** - Star schema design
-- **Feature Engineering** - Derived metrics and KPIs
+- **ETL/ELT** - Extract, Transform, Load pipelines with error handling
+- **Data Modeling** - Star schema design for optimized queries
+- **Feature Engineering** - Derived metrics (RFM scores, cohort indices, growth rates)
 
 ---
 
 ## 🏗 Architecture
+
 ### Data Flow
 
-CSV Files → Data Cleaning (Pandas) → SQLite Database → SQL Analytics → Streamlit Dashboard → Plotly Visualizations
 
-### Database Schema
-- Fact Table: Orders
-- Dimension Tables: Customers, Products, Sellers, Date
+### Database Schema (Star Schema)
+- **Fact Table:** `fact_orders` - Order-level transactions and metrics
+- **Dimension Tables:**
+  - `dim_customers` - Customer demographics and location
+  - `dim_products` - Product categories and attributes
+  - `dim_sellers` - Seller performance and location
+  - `dim_date` - Time dimension for time-series analysis
 
 ### Optimization Techniques
-- Indexed frequently queried columns
-- Used CTEs for complex aggregations
-- Cached results in Streamlit
+- ✅ **Indexing:** B-tree indexes on `order_date`, `customer_id`, and `product_category`
+- ✅ **Query Refactoring:** CTEs for readable, maintainable SQL
+- ✅ **Caching Strategy:** `@st.cache_data` for expensive computations
+- ✅ **Lazy Loading:** Pagination for large datasets
+
+---
+
+## 💻 Installation
+
+### Prerequisites
+- Python 3.9 or higher
+- pip package manager
+- Git (optional, for cloning)
+
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ecommerce-analytics-dashboard.git
+   cd ecommerce-analytics-dashboard
