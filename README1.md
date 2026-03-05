@@ -1,9 +1,9 @@
 # 🛒 E-Commerce Sales Analytics Dashboard
 ### 👩‍💻 Developed by Sonika Deshwal
 B.Tech CSE | Data Analytics Enthusiast | SQL & Python Developer
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=streamlit)](https://your-app.streamlit.app)
+[![Live Demo](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28-red?style=for-the-badge&logo=streamlit)](https://streamlit.io)
+[![Streamlit](https://2aq8wyueakiyeuy8bypsph.streamlit.app/)
 [![SQLite](https://img.shields.io/badge/SQLite-3-orange?style=for-the-badge&logo=sqlite)](https://sqlite.org)
 [![Plotly](https://img.shields.io/badge/Plotly-5.18-blueviolet?style=for-the-badge&logo=plotly)](https://plotly.com)
 
